@@ -1,5 +1,8 @@
 @import "font";
 @import "variables";
+@import "consultation";
+@import "forms";
+@import "buttons";
 * {
     margin: 0;
     font-family: Museo;
@@ -49,14 +52,6 @@
     &__call_mobile {
         display: none;
     }
-}
-.button {
-    width: 150px;
-    height: 30px;
-    font-size: 12px;
-    font-weight: 400;
-    cursor: pointer;
-    @include touch_button
 }
 .main-theme {
     margin-top: 91px;
@@ -133,13 +128,6 @@
     min-height: 470px;
     padding-top: 69px;
     background: #f6f6f6;
-    h2 {
-        font-weight: 700;
-        color: #0d0d0d;
-        font-size: 30px;
-        text-align: center;
-        line-height: 30px;
-    }
     &__own {
         margin-top: 65px;
         display: flex;
@@ -165,5 +153,12 @@
         }
         }
     }
+}
+.second-header {
+    font-weight: 700;
+    color: #0d0d0d;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
 }
 @import "media";
