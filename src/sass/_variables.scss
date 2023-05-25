@@ -1,0 +1,9 @@
+$main-color: #c70101;
+@mixin touch_button {
+    border-radius: 5px;
+    background-color: $main-color;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+}
