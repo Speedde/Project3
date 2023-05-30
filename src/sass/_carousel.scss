@@ -1,0 +1,70 @@
+.carousel {
+    padding: 81px 0 82px;
+    &__inner {
+        margin: 0 auto;
+        width: 750px;
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .slick-next {
+        left: auto;
+        right: -66px;
+    }
+}
+@media (max-width: 1200px) {
+    .carousel {
+        &__inner {
+            width: 80%;
+            img {
+                width: 100%;
+            }
+            .slick-dots {
+                list-style-type: none;
+                padding: 0;  
+                text-align: center;
+                li {
+                    display: inline-block;
+                    margin: 0 5px;
+                    width: 5px;
+                    height: 5px;
+                    button {
+                        border-radius: 100%;
+                        background: rgb(43, 226, 159);
+                        color: transparent;
+                        border: none;
+                        height: 100%;
+                        width: 100%;
+                        padding: 0;
+                    }       
+                }
+                .slick-active {
+                    button {
+                        background: rgb(226, 179, 8);
+                    }
+                }
+            }
+        }
+        
+    }
+}
+@media (max-width: 968px) {
+    .carousel {
+        padding: 40px 0;
+    }
+}
+@media (max-width: 968px) {
+    .carousel {
+        padding: 20px 0;
+    }
+}
